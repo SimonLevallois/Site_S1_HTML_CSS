@@ -1,0 +1,87 @@
+/*Positionnement et style de la phrase d'accroche*/
+#phrase {
+	text-align : center ;
+	font-family: "Trade";
+	font-size : 30px ;
+	margin : 2em ;
+	perspective: 250px;
+	color : gold ;
+}
+
+/*Création d'un grid pour le postionnement du corp de la page web*/
+.sec {
+	display : grid ;
+	grid-template-columns: 3fr 2fr;
+}
+
+/*Gestion de la taille maximal des images*/
+#ville {
+	max-width : 600px ;
+}
+
+#coru {
+	max-width : 250px ;
+}
+
+/*Mise en place du style sur les paragraphes du main*/
+p {
+	text-align: justify;
+	margin-right : 20px ;
+}
+
+main {
+	font-size : 120% ;
+	font-family: "Trade";
+}
+
+/*Organisation du aside et mise en place sous forme de tableau*/
+aside h2, aside figure {
+	text-align: center;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: justify;
+}
+
+.sep{
+	border-top : 1px solid white ;
+	border-left : 1px solid white ;
+	padding-left : 5px ;
+}
+
+aside {
+	border : 1px solid white ;
+}
+
+.sepe {
+	border-top : 1px solid white ;
+	padding-left : 5px ;
+}
+
+#asidetitle {
+	font-size : 26px ; 
+}
+
+#cara {
+	font-size : 20px ; 
+}
+
+main aside h3 {
+	font-size : 17px ;
+}
+
+main aside li {
+	font-size : 15px ; 
+}
+
+.lien {
+	color : gold ;
+	text-decoration: none;
+}
+
+.lien:hover {
+	font-style: italic; 
+	color : yellow ;
+}

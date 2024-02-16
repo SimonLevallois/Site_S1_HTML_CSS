@@ -1,0 +1,225 @@
+html {
+	background-color: black;
+}
+
+/*Importation des polices d'écriture pour les pages web*/
+@font-face {
+	font-family: "starwars";
+	src: url("polices/STARWARS.TTF");
+}
+
+@font-face {
+	font-family: "Trade";
+	src: url("polices/TradeGothicLTStdBoldNo.otf");
+}
+
+/*Mise en place graphique générale*/
+header h1 a {
+	text-decoration: none;
+	color : white ;
+}
+
+body{
+	max-width: 1400px;
+	margin : auto ;
+}
+
+h1, aside, article, footer {
+	color : white ;
+}
+
+h1 {
+	margin-left: 5em;
+	font-family: "starwars";
+	font-size: 55px;
+}
+
+header {
+	display : grid ;
+	grid-template-columns: 1fr 5fr ;
+	margin : 0.5em ;
+	padding : 0.5em ;
+}
+
+@media (max-width : 1000px ) {
+	aside {
+		display : none ;
+	}
+}
+
+/*Taille du logo dans le header*/
+.logo {
+	max-width: 250px;
+}
+
+/*Création du style du menu principal de navigation*/
+.menu ul {
+	display : grid ; 
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align: center;
+	margin-top : 30px ;
+}
+
+.menu li {
+	border-radius: 5px;
+	font-size : 20px ; 
+	list-style-type : none ; 
+	height : 60px ; 
+	display : grid ;
+	grid-template-rows: 1fr 1fr;
+	margin : 0px ;
+	padding-top : 10px; 
+}
+
+.menu li a {
+	text-decoration: none;
+	color : white ;
+	font-family : "starwars";
+	font-size : 20px ;
+}
+
+/*Changement du fond et du style de police au survol du menu*/
+.menu li:hover {
+	background-color: #454545;
+	font-style: italic; 
+	text-transform: uppercase ;
+}
+
+/*Mise en place de la taille et du positionnement du sabre laser et de la lame*/
+.lightsaber{
+	margin-left : 0 ;
+	display : grid ;
+	grid-template-columns: 1fr 5fr;
+}
+
+.saber img{
+	width : 75px ;
+	margin-left : 5px ;
+}
+
+/*Création de la lame du sabre laser*/
+.light {
+	width : 0 ;
+	height : 0.4em ; 
+	margin-top : 5px ;
+	border-radius : 0 3em 3em 0  ;
+	position : relative ;
+	transition : 0.5s ;
+}
+
+/*Création de l'animation de l'ouverture du sabre laser au survol du menu navigation avec une couleur différente par choix du menu*/
+.hist:hover .lightsaber .light {
+	width : 250px ;
+	box-shadow : 0 0 25px 10px blue ; 
+	border : 2px solid blue ; 
+	animation : flicker 0.2s linear ;
+	background : white ;
+}
+
+.hist:hover .lightsaber {
+	width : 20px ;
+	animation : flicker 0.2s linear ;
+}
+
+.cult:hover .lightsaber .light {
+	width : 250px ;
+	box-shadow : 0 0 25px 10px red ; 
+	border : 2px solid red ; 
+	animation : flicker 0.2s linear ;
+	background : white ;
+}
+
+.cult:hover .lightsaber {
+	width : 20px ;
+	animation : flicker 0.2s linear ;
+}
+
+.lieux:hover .lightsaber .light {
+	width : 250px ;
+	box-shadow : 0 0 25px 10px purple ; 
+	border : 2px solid purple ; 
+	animation : flicker 0.2s linear ;
+	background : white ;
+}
+
+.lieux:hover .lightsaber {
+	width : 20px ;
+	animation : flicker 0.2s linear ;
+}
+
+.astr:hover .lightsaber .light {
+	width : 250px ;
+	box-shadow : 0 0 25px 10px green ; 
+	border : 2px solid green ; 
+	animation : flicker 0.2s linear ;
+	background : white ;
+}
+
+.astr:hover .lightsaber {
+	width : 20px ;
+	animation : flicker 0.2s linear ;
+}
+
+
+
+/*Mise en place du menu de navigation en footer*/
+.foot {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin : 3em ;
+	font-family: "Trade";
+	font-size : 15px ;
+}
+
+.foot .categorie {
+	position: relative; 
+	border : 1px solid white ;
+	border-radius: 5px;
+}
+
+.foot .categorie ul {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.foot #src:hover ul {
+	max-height: 50em;
+	transition: 1s;
+	margin-top: -166px;
+}
+
+.foot #ext:hover ul {
+	max-height: 50em;
+	transition: 1s;
+	margin-top: -398px;
+}
+
+.foot h3,
+.foot a {
+	display: block;
+	margin: 0;
+	padding: .5em 1.5em;
+	font-size: inherit;
+	color: goldenrod;
+	background-color: black;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.foot .categorie:hover h3 {
+	color: white;
+	background-color: steelblue;
+}
+
+.foot a:hover {
+	color: white;
+	background-color: steelblue;
+}
+

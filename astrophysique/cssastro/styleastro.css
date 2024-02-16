@@ -1,0 +1,52 @@
+/*Changement du fond et du style de police au survol du menu*/
+.menu li:hover {
+	background-color: #454545;
+	font-style: italic; 
+	text-transform: uppercase ;
+}
+
+/*Mise en place du style sur les paragraphes du main*/
+p {
+	text-align: justify;
+	margin-right : 20px ;
+}
+
+main {
+	font-size : 120% ;
+	font-family: "Trade";
+}
+
+.intro,
+.astrophysics-info,
+.celestial-features {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro:hover,
+.astrophysics-info:hover,
+.celestial-features:hover {
+    transform: scale(1.05);
+}
+
+h2,
+h3 {
+    color: #ffcc00;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Animations for section hover */
+.intro:hover,
+.astrophysics-info:hover,
+.celestial-features:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

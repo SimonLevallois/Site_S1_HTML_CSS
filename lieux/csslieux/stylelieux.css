@@ -1,0 +1,39 @@
+.corps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.endroit {
+    width: 80%;
+    margin: 2em 0;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.endroit:hover {
+    transform: scale(1.05);
+}
+
+.lieuxinf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lieuxinf img {
+    max-width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.lieuxinf p {
+    flex: 1;
+    margin: 0 1em;
+}
